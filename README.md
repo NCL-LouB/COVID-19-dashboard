@@ -31,8 +31,9 @@ setwd('my-project')
 load.project()
 
 ```
-4. Open app.R file located in V1 directory
-5. Run app
+4. Open app.R file located in shiny directory
+5. Update the file paths on lines 11 to 23 to reflect where the project files are located on your computer
+6. Run app
 
 The following libraries will need to be installed to run the project: reshape2, plyr, tidyverse, stringr, lubridate, readxl, jsonlite, httr, shiny, plotly
 
