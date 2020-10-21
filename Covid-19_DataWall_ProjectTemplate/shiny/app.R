@@ -8,19 +8,19 @@ library(leaflet)
 
 # Load the cached data
 ###
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/nationCases.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/regionCases.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/NEltlaCases.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/nationdeaths.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/regiondeaths.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/mediantrafficLONG.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/Commutingtrafficmap.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/CommutingtrafficDAY.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/carpark.meta.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/carparkSummary.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/ped.daily.totals.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.east.RData")
-load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.west.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/nationCases.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/regionCases.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/NEltlaCases.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/nationdeaths.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/regiondeaths.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/mediantrafficLONG.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/Commutingtrafficmap.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/CommutingtrafficDAY.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/carpark.meta.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/carparkSummary.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/ped.daily.totals.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.east.RData")
+load(file = "~/COVID-19-dashboard/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.west.RData")
 
 
 # Define UI for app that draws a histogram ----
