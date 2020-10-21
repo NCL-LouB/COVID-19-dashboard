@@ -1,0 +1,63 @@
+---
+title: "Exploratory Data Analysis: Deaths Data"
+author: "Louise Braithwaite"
+date: "31/08/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+There are six metrics relating to coronavirus deaths in the governments coronavirus developers api, which have been listed below. 
+
+* __newDeaths28DaysByPublishDate:__ Deaths within 28 days of positive test   
+* __cumDeaths28DaysByPublishDate:__ Cumulative deaths within 28 days of positive test  
+* __cumDeaths28DaysByPublishDateRate:__ Rate of cumulative deaths within 28 days of positive test per 100k resident population  
+* __newDeaths28DaysByDeathDate:__ Deaths within 28 days of positive test by death date  
+* __cumDeaths28DaysByDeathDate:__ Cumulative deaths within 28 days of positive test by death date  
+* __cumDeaths28DaysByDeathDateRate:__ Rate of cumulative deaths within 28 days of positive test by death date per 100k resident population 
+
+Death data can be presented by when death occurred (date of death) or when the death was reported (date reported).
+
+* Deaths by date of death - each death is assigned to the date that the person died irrespective of how long it took for the death to be reported. Previously reported data are therefore continually updated
+* Deaths by date reported - each death is assigned to the date when it was first included in the published totals. The specific 24 hour periods reported against each date vary by nation and are defined below  
+
+The death data by date of death is available for the area types: nation and English regions. The death data by publish date is only available for the nation area type. Therefore we will only use the death by date data.
+
+Deaths are allocated to the deceased's usual area of residence.
+
+
+ 
+Nation or region | Name | Date of first recorded death | Number of deaths recorded on this day
+------------- | ------------- | ------------- | ------------- 
+Nation | England | 2020-03-02 | 1
+Region | East of England | 2020-03-02 | 1
+Region | East Midlands | 2020-03-03 | 1
+Region | South East | 2020-03-03 | 1
+Region | North West | 2020-03-08 | 1
+Region | West Midlands | 2020-03-08 | 1
+Region | London | 2020-03-09 | 2
+Region | South West | 2020-03-09 | 1
+Region | Yorkshire and The Humber | 2020-03-12 | 1
+Nation | Scotland | 2020-03-12 | 1
+Region | North East | 2020-03-15 | 1
+Nation | Wales | 2020-03-16 | 3
+Nation | Northern Ireland | 2020-03-18 | 1
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

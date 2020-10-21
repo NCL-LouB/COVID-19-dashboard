@@ -1,0 +1,54 @@
+---
+title: "Exploratory Data Analysis"
+author: "Louise Braithwaite"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir=normalizePath('~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate'))
+```
+
+## Introduction
+
+Exploratory data analysis was conducted on the processed data frames listed below: 
+
+1. cases (the data pulled from the government API. The api requests were compiled into one data frame and the data was cleaned)
+2. deaths (the data pulled from the government API. The api requests were compiled into one data frame and the data was cleaned)
+3. mediantrafficLONG (Shiny data)
+4. Commutingtraffic (anpr traffic count data (TotalTrafficLongjoin) filtered to include only the 12 commuting locations)
+5. CommutingtrafficDay (Shiny data)
+6. carparkLONG (the carpark data frame is pivoted to long format and a daily occupancy hours variable is created)
+7. carparkSummary (Shiny data)
+8. ped.daily.totals (Shiny data)
+9. NorthumberlandSt.east (Shiny data)
+10. NorthumberlandSt.west (Shiny data)
+11. ped.summary (data frame of summary statistics for all locations) 
+12. ped.flow (data frame of summary statistics filtered to include just Northumberland St near Fenwicks location)  
+
+
+```{r 1. load dataframes, include = FALSE}
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/cases.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/deaths.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/mediantrafficLONG.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/Commutingtraffic.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/CommutingtrafficDay.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/carparkLONG.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/carparkSummary.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/ped.daily.totals.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.east.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/NorthumberlandSt.west.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/ped.summary.RData")
+load(file = "~/Covid-19_Data_Wall/Covid-19_DataWall_ProjectTemplate/cache/ped.flow.RData")
+```
+
+### Cases
+
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -1,0 +1,5 @@
+Code that needs to be fixed
+
+* The API requests in the 01-A-cases.R munge file are not working again. Need to troubleshoot.
+* The nation API request in the 01-A-cases.R, 01-B-deaths.R and 01-C-healthcare munge files will now probably be over 1000 observations so the code should be updated to a function and for loop like the region, utla or ltla data. 
+* I did not use the United Kingdom data for cases, deaths or health care so there is no code for this API request... it might be helpful to provide this code for the UK overview data
