@@ -60,9 +60,3 @@ install.packages('insertpackagename')
 * __README.md:__ Notes to help orient any newcomers to the project.  
 * __TODO:__ This directory was not used.
 * __shiny:__ The Shiny app.
-
-
-
-
-
-
